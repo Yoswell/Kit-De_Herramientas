@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Silkscreen&display=swap');
+
+* { font-family: 'Silkscreen', cursive; }
+
+body {
+    background-color: #111113 !important;
+    box-sizing: content-box;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+
+#Principal {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #40e78e00;
+    margin-top: -300px;
+}
+
+.title {
+    position: absolute;
+    top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111113;
+    z-index: 0;
+}
+
+.title img {
+    width: 80%;
+}
+
+.title .casio {
+    width: 91%;
+}
+
+.card {
+    width: 500px; height: 700px !important;
+    background-color: #111113 !important;
+    top: 80px;
+    padding: 20px;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    border: none !important;
+}
+
+.cont_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.btnn {
+    width: 100%; height: 50px;
+    background-color: #23262e;
+    color: #ffffff;
+    border: 3px solid #111113;
+    border-radius: 10px;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 1rem;
+    outline: none;
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#Secciones {
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+#Secciones button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; height: 150px;
+    padding: 10px;
+    background-color: #23262e;
+}
+
+#Secciones button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.conversor {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    width: 100%; height: 100%;
+}
+
+.temp {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #616161;
+}
+
+.convertidaTemp {
+    background-color: #23262e;
+    height: 55px;
+    margin: 0;
+    border-radius: 0 8px 8px 0;
+    border: 3px solid #111113;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion1 {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 4fr 3fr;
+}
+
+.seccion1 input {
+    border-radius: 8px 0 0 8px;
+    border: 3px solid #111113;
+    width: 100%; height: 55px;
+    font-size: 1.2rem;
+    background-color: #23262e;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+}
+
+.menu-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; height: 80px;
+    background-color: #40e78e;
+    z-index: 10;
+}
+
+.menu-hamburger .menu {
+    width: 70px; height: 100%;
+    color: #111113;
+    background-color: #40e78e;
+    cursor: pointer;
+    border: none;
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    text-align: center;
+}
+
+.container .menu-hamburger .tit { font-size: 2rem; font-weight: 100; text-align: center;}
+
+.barr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #23262e;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #111113;
+}
+
+.menu-hamburger-temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; height: 60px;
+    top: 100px; left: +1;
+    border-radius: 20px 0;
+}
+
+.menu-hamburger-temperature .menu-temperature {
+    width: 100%; height: 45px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #23262e;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.cont_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.screen {
+    width: 100%; height: 100px;
+    border-radius: .5rem;
+    background-color: #23262e;
+    font-size: 2.5rem;
+    outline: none;
+    cursor: none !important;
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-button h1 {
+    position: relative;
+    top: -20px;
+    width: 100%;
+}
+
+input {
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 5px solid #111113;
+    background-color: #23262e;
+    color: #fff;
+    font-size: 1.3rem !important;
+    font-family: 'Press Start 2P', cursive;
+}
+
+input:hover {
+    background-color: #262832;
+    border-color: #40e78e;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.cont { padding-top: 55px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+h1 { font-size: 1.5rem; }
+.sm { padding-top: 50px; }
+i { color: rgb(255, 255, 255); font-size: 3rem; }
+.seccion h1 { margin-top: -50px; text-align: center; }
+#Secciones button img { width: 70px; }
+.conver { cursor: pointer; text-align: center; }
+.seccion2 { display: flex; }
+#Intro { padding-top: 30px; height: 300px; }
+#Long { padding-top: 30px; height: 300px; }
+#Intro button { padding-left: 170px; text-align: start; }
+#Long button { padding-left: 170px; text-align: start; }
+.tras img { width: 30px; -webkit-filter: invert(100%); filter: invert(80%); }
+.cont-nums { display: grid; width: 100%; grid-template-columns: 2fr 2fr 2fr 2fr; }
+.selected { background-color: #23262e; color: #fff; }
+
+#cont_menu,
+#Juego, 
+#Fahrenheit, 
+#Rankine, 
+#Reaumur, 
+#Kelvin, 
+#Celsius, 
+#Calculator { 
+    display: none; 
+}
+
+#cont_menuLong,
+#Longitud,
+#Kilometro,
+#Metro,
+#Decimetro,
+#Centimetro,
+#Milimetro {
+    display: none;
+}

@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+    .btnn {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .btnn {
+        padding: 10px;
+        font-size: 0.7em;
+    }
+}

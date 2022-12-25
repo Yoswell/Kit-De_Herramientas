@@ -1,0 +1,243 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de herramientas</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Silkscreen&display=swap" 
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="menu-hamburger">
+            <button class="menu" id="menu">≡</button>
+            <h1 class="tit">KIT DE HERRMIENTAS</h1>
+        </div>
+    </header>
+    <!-------------------------------------------------------*>
+    <*------------------Menu general de la app---------------*>
+    <*-------------------------------------------------------->
+    <div class="container" id="Principal">
+        <div class="card">
+            <div class="seccion" id="seccion">
+                <h1 class="title sm"><img src="img/herramientas.png" alt=""></h1>
+                <form name="conversor" class="Secciones" id="Secciones">
+                    <button id="Calc" class="btnn">
+                        <img class="img-responsive" src="img/calc.png" alt="">
+                        <p>Calculadora Cientifica</p>
+                    </button>
+                    <button id="Temp" class="btnn">
+                        <img src="img/temp.png" alt="">
+                        <p>Conversor de temperaturas</p>
+                    </button>
+                    <button id="Longi" class="btnn">
+                        <img src="img/distancia.png" alt="">
+                        <p>Medidas de longitud</p>
+                    </button>
+                    <button class="btnn">
+                        <img src="img/no.png" alt="">
+                        Proximamente
+                    </button>
+                    <button class="btnn">
+                        <img src="img/no.png" alt="">
+                        Proximamente
+                    </button>
+                    <button class="btnn">
+                        <img src="img/no.png" alt="">
+                        Proximamente
+                    </button>
+                </form>
+            </div>
+            <!-------------------------------------------------------*>
+            <*----------------Seccion de la calculadora--------------*>
+            <*-------------------------------------------------------->
+            <form name="calculator" class="container-button" id="Calculator">
+                <h1 class="title"><img class="casio" src="img/calculadora.png" alt=""></h1>
+                <input class="screen" type="textfield" name="cal" value="" autocomplete="off" readonly></input>
+                <div class="cont-nums">
+                    <input type="button" value="1" onclick="val1();">
+                    <input type="button" value="2" onclick="val2();">
+                    <input type="button" value="3" onclick="val3();">
+                    <input type="button" value="+" onclick="valmas();" class="selected">
+
+                    <input type="button" value="4" onclick="val4();">
+                    <input type="button" value="5" onclick="val5();">
+                    <input type="button" value="6" onclick="val6();">
+                    <input type="button" value="-" onclick="valmenos();" class="selected">
+
+                    <input type="button" value="7" onclick="val7();">
+                    <input type="button" value="8" onclick="val8();">
+                    <input type="button" value="9" onclick="val9();">
+                    <input type="button" value="*" onclick="valpor();" class="selected">
+
+                    <input type="button" value="0" onclick="val0();">
+                    <input type="reset"  value="AC">
+                    <input type="button" value="=" onclick="valequals();">
+                    <input type="button" value="/" onclick="valdiv();" class="selected">
+                </div>
+            </form>
+            <!-------------------------------------------------------*>
+            <*----------------Seccion de las temperaturas------------*>
+            <*-------------------------------------------------------->
+            <div class="cont_card" id="Juego">
+                <h1 class="title"><img src="img/temperatura.png" alt=""></h1>
+                <div class="col-lg-12 col-md-12 col-sm-12 seccion1">
+                    <input type="text" id="textConver">
+                    <h1 class="convertidaTemp" id="mostrar">0.00</h1>
+                </div>
+                <h1 class="temp">Ingrese una temperatura a convertir</h1>
+
+                <form name="conversor" class="conversor" id="Celsius">
+                    <button class="btnn">Celsius (C) a Fahrenheit (F)</button><button id="but1_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Celsius (C) a Rankine (Ra)</button><button id="but1_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Celsius (C) a Reaumur (R)</button><button id="but1_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Celsius (C) a Kelvin (K)</button><button id="but1_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Fahrenheit">
+                    <button class="btnn">Fahrenheit (F) a Celsius (C)</button><button id="but2_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Fahrenheit (F) a Rankine (Ra)</button><button id="but2_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Fahrenheit (F) a Reaumur (R)</button><button id="but2_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Fahrenheit (F) a Kelvin (K)</button><button id="but2_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Rankine">
+                    <button class="btnn">Rankine (Ra) a Fahrenheit (F)</button><button id="but3_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Rankine (Ra) a Celsius (C)</button><button id="but3_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Rankine (Ra) a Reaumur (R)</button><button id="but3_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Rankine (Ra) a Kelvin (K)</button><button id="but3_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Reaumur">
+                    <button class="btnn">Reaumur (R) a Fahrenheit (F)</button><button id="but4_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Reaumur (R) a Celsius (C)</button><button id="but4_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Reaumur (R) a Rankine (Ra)</button><button id="but4_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Reaumur (R) a Kelvin (K)</button><button id="but4_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Kelvin">
+                    <button class="btnn">Kelvin (K) a Fahrenheit (F)</button><button id="but5_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Kelvin (K) a Celsius (C)</button><button id="but5_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Kelvin (K) a Rankine (Ra)</button><button id="but5_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Kelvin (K) a Reaumur (R)</button><button id="but5_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <div class="seccion2">
+                    <h1 class="temp">Gracias por usar esta app...</h1>
+                </div>
+                <div class="menu-hamburger-temperature">
+                    <button class="menu-temperature" id="temperature">Cambiar tipo de conversión</button>
+                </div>
+            </div>
+            <!-------------------------------------------------------*>
+            <*----------------Seccion de las logitudes---------------*>
+            <*-------------------------------------------------------->
+            <div class="cont_card" id="Longitud">
+                <h1 class="title"><img src="img/longitud.png" alt=""></h1>
+                <div class="col-lg-12 col-md-12 col-sm-12 seccion1">
+                    <input type="text" id="textConverLong">
+                    <h1 class="convertidaTemp" id="mostrarLong">0.00</h1>
+                </div>
+                <h1 class="temp">Ingrese una temperatura a convertir</h1>
+
+                <form name="conversor" class="conversor" id="Kilometros">
+                    <button class="btnn">Kilometro (KM) a (M)</button><button id="long1_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Kilometro (KM) a (DM)</button><button id="long1_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Kilometro (KM) a (CM)</button><button id="long1_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Kilometro (KM) a (MM)</button><button id="long1_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Metros">
+                    <button class="btnn">Metro (M) a (KM)</button><button id="long2_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Metro (M) a (DM)</button><button id="long2_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Metro (M) a (CM)</button><button id="long2_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Metro (M) a (MM)</button><button id="long2_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Decimetros">
+                    <button class="btnn">Decimetro (DM) a (KM)</button><button id="long3_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Decimetro (DM) a (M)</button><button id="long3_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Decimetro (DM) a (CM)</button><button id="long3_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Decimetro (DM) a (MM)</button><button id="long3_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Centimetros">
+                    <button class="btnn">Centimetro (CM) a (KM)</button><button id="long4_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Centimetro (CM) a (M)</button><button id="long4_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Centimetro (CM) a (DM)</button><button id="long4_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Centimetro (CM) a (MM)</button><button id="long4_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <form name="conversor" class="conversor" id="Milimetros">
+                    <button class="btnn">Milimetro (MM) a (KM)</button><button id="long5_1" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Milimetro (MM) a (M)</button><button id="long5_2" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Milimetro (MM) a (DM)</button><button id="long5_3" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                    <button class="btnn">Milimetro (MM) a (CM)</button><button id="long5_4" class="btnn tras"><img src="img/translate.png" alt=""></button>
+                </form>
+
+                <div class="seccion2">
+                    <h1 class="temp">Gracias por usar esta app...</h1>
+                </div>
+                <div class="menu-hamburger-temperature">
+                    <button class="menu-temperature" id="Longitudd">Cambiar tipo de conversión</button>
+                </div>
+            </div>
+            <!-------------------------------------------------------*>
+            <*----------------------Menu temperaturas----------------*>
+            <*-------------------------------------------------------->
+            <div class="cont_menu" id="cont_menu">
+                <div class="cont">
+                    <h1 class="title"><img src="img/klipartz.com.png" alt=""></h1>
+                    <div class="barr">
+                        <h1 class="temp">¿Que temperatura desea convertir?</h1>
+                    </div>
+                    <form name="conversor" class="conversor" id="Intro">
+                        <div></div><button class="btnn" id="seccionC">Celsius (C)</button><div></div>
+                        <button class="btnn" id="seccionF">Fahrenheit (F)</button>
+                        <button class="btnn" id="seccionRA">Rankine (Ra)</button>
+                        <button class="btnn" id="seccionRE">Reaumur (R)</button>
+                        <button class="btnn" id="seccionK">Kelvin (K)</button>
+                    </form>
+                    <div class="barr">
+                         <h1 class="temp">Gracias por usar esta app...</h1>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------------------*>
+            <*----------------------Menu longitudes------------------*>
+            <*-------------------------------------------------------->
+            <div class="cont_menu" id="cont_menuLong">
+                <h1 class="title"><img src="img/klipartz.com.png" alt=""></h1>
+                <div class="cont">
+                    <div class="barr">
+                        <h1 class="temp">¿Que longitud desea convertir?</h1>
+                    </div>
+                    <form name="conversor" class="conversor" id="Long">
+                        <button class="btnn" id="seccionKM">Kilometro (KM)</button>
+                        <button class="btnn" id="seccionM">Metro (M)</button>
+                        <button class="btnn" id="seccionDM">Decimetro (DM)</button>
+                        <button class="btnn" id="seccionCM">Centimetro (CM)</button>
+                        <button class="btnn" id="seccionMM">Milimetro (MM)</button>
+                    </form>
+                    <div class="barr">
+                        <h1 class="temp">Gracias por usar esta app...</h1>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Index.js"></script>
+<script src="BotonesConv.js"></script>
+<script src="BotonesConvLong.js"></script>
+
+</html>
