@@ -163,7 +163,7 @@ seccionMM.addEventListener('click', (e) => {
 calc.addEventListener('click', (e) => {
     e.preventDefault();
     seccionCalculator.style.display = 'none';
-    calculator.style.display = 'block';
+    calculator.style.display = 'flex';
 });
 
 Temp.addEventListener('click', (e) => {
