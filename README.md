@@ -1,3 +1,3 @@
 # Kit-de-herramientas
 Kit de herramientas (calculadora, conversor de temperaturas, conversor de longitudes)
-![kit](https://user-images.githubusercontent.com/113799193/209478247-d6be5746-b450-4578-ab57-ba76a72e535a.png)
+![kit](https://github.com/Yoswell/Kit-de-herramientas/assets/113799193/74c2fb21-3ef5-4ca1-98ee-ffb89b7a6411)
